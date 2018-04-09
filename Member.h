@@ -79,7 +79,7 @@ public:
 
     void follow(Member &m)
     {
-        if(!isfollowingafter(m))
+        if(!isfollowingafter(m)&&m.id!=id)
         {
             followsAfter++;
             ifollow.push_back(m.id);
